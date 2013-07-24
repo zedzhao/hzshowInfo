@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3515582D17A095D100DFA509 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3515582C17A095D100DFA509 /* UIKit.framework */; };
+		3515582F17A095D100DFA509 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3515582E17A095D100DFA509 /* Foundation.framework */; };
+		3515583117A095D100DFA509 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3515583017A095D100DFA509 /* CoreGraphics.framework */; };
+		3515583717A095D100DFA509 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3515583517A095D100DFA509 /* InfoPlist.strings */; };
+		3515583917A095D100DFA509 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3515583817A095D100DFA509 /* main.m */; };
+		3515583D17A095D100DFA509 /* HZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3515583C17A095D100DFA509 /* HZAppDelegate.m */; };
+		3515583F17A095D100DFA509 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3515583E17A095D100DFA509 /* Default.png */; };
+		3515584117A095D100DFA509 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3515584017A095D100DFA509 /* Default@2x.png */; };
+		3515584317A095D200DFA509 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3515584217A095D100DFA509 /* Default-568h@2x.png */; };
+		3515584617A095D200DFA509 /* HZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3515584517A095D200DFA509 /* HZViewController.m */; };
+		3515584917A095D200DFA509 /* HZViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3515584717A095D200DFA509 /* HZViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3515582917A095D100DFA509 /* HZShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3515582C17A095D100DFA509 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3515582E17A095D100DFA509 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3515583017A095D100DFA509 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3515583417A095D100DFA509 /* HZShow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HZShow-Info.plist"; sourceTree = "<group>"; };
+		3515583617A095D100DFA509 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3515583817A095D100DFA509 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3515583A17A095D100DFA509 /* HZShow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HZShow-Prefix.pch"; sourceTree = "<group>"; };
+		3515583B17A095D100DFA509 /* HZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZAppDelegate.h; sourceTree = "<group>"; };
+		3515583C17A095D100DFA509 /* HZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZAppDelegate.m; sourceTree = "<group>"; };
+		3515583E17A095D100DFA509 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3515584017A095D100DFA509 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3515584217A095D100DFA509 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3515584417A095D200DFA509 /* HZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HZViewController.h; sourceTree = "<group>"; };
+		3515584517A095D200DFA509 /* HZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HZViewController.m; sourceTree = "<group>"; };
+		3515584817A095D200DFA509 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HZViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3515582617A095D100DFA509 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3515582D17A095D100DFA509 /* UIKit.framework in Frameworks */,
+				3515582F17A095D100DFA509 /* Foundation.framework in Frameworks */,
+				3515583117A095D100DFA509 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3515582017A095D100DFA509 = {
+			isa = PBXGroup;
+			children = (
+				3515583217A095D100DFA509 /* HZShow */,
+				3515582B17A095D100DFA509 /* Frameworks */,
+				3515582A17A095D100DFA509 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3515582A17A095D100DFA509 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3515582917A095D100DFA509 /* HZShow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3515582B17A095D100DFA509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3515582C17A095D100DFA509 /* UIKit.framework */,
+				3515582E17A095D100DFA509 /* Foundation.framework */,
+				3515583017A095D100DFA509 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3515583217A095D100DFA509 /* HZShow */ = {
+			isa = PBXGroup;
+			children = (
+				3515583B17A095D100DFA509 /* HZAppDelegate.h */,
+				3515583C17A095D100DFA509 /* HZAppDelegate.m */,
+				3515584417A095D200DFA509 /* HZViewController.h */,
+				3515584517A095D200DFA509 /* HZViewController.m */,
+				3515584717A095D200DFA509 /* HZViewController.xib */,
+				3515583317A095D100DFA509 /* Supporting Files */,
+			);
+			path = HZShow;
+			sourceTree = "<group>";
+		};
+		3515583317A095D100DFA509 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3515583417A095D100DFA509 /* HZShow-Info.plist */,
+				3515583517A095D100DFA509 /* InfoPlist.strings */,
+				3515583817A095D100DFA509 /* main.m */,
+				3515583A17A095D100DFA509 /* HZShow-Prefix.pch */,
+				3515583E17A095D100DFA509 /* Default.png */,
+				3515584017A095D100DFA509 /* Default@2x.png */,
+				3515584217A095D100DFA509 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3515582817A095D100DFA509 /* HZShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3515584C17A095D200DFA509 /* Build configuration list for PBXNativeTarget "HZShow" */;
+			buildPhases = (
+				3515582517A095D100DFA509 /* Sources */,
+				3515582617A095D100DFA509 /* Frameworks */,
+				3515582717A095D100DFA509 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZShow;
+			productName = HZShow;
+			productReference = 3515582917A095D100DFA509 /* HZShow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3515582117A095D100DFA509 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HZ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Kun;
+			};
+			buildConfigurationList = 3515582417A095D100DFA509 /* Build configuration list for PBXProject "HZShow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3515582017A095D100DFA509;
+			productRefGroup = 3515582A17A095D100DFA509 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3515582817A095D100DFA509 /* HZShow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3515582717A095D100DFA509 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3515583717A095D100DFA509 /* InfoPlist.strings in Resources */,
+				3515583F17A095D100DFA509 /* Default.png in Resources */,
+				3515584117A095D100DFA509 /* Default@2x.png in Resources */,
+				3515584317A095D200DFA509 /* Default-568h@2x.png in Resources */,
+				3515584917A095D200DFA509 /* HZViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3515582517A095D100DFA509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3515583917A095D100DFA509 /* main.m in Sources */,
+				3515583D17A095D100DFA509 /* HZAppDelegate.m in Sources */,
+				3515584617A095D200DFA509 /* HZViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3515583517A095D100DFA509 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3515583617A095D100DFA509 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3515584717A095D200DFA509 /* HZViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3515584817A095D200DFA509 /* en */,
+			);
+			name = HZViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3515584A17A095D200DFA509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3515584B17A095D200DFA509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3515584D17A095D200DFA509 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HZShow/HZShow-Prefix.pch";
+				INFOPLIST_FILE = "HZShow/HZShow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3515584E17A095D200DFA509 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HZShow/HZShow-Prefix.pch";
+				INFOPLIST_FILE = "HZShow/HZShow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3515582417A095D100DFA509 /* Build configuration list for PBXProject "HZShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3515584A17A095D200DFA509 /* Debug */,
+				3515584B17A095D200DFA509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3515584C17A095D200DFA509 /* Build configuration list for PBXNativeTarget "HZShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3515584D17A095D200DFA509 /* Debug */,
+				3515584E17A095D200DFA509 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3515582117A095D100DFA509 /* Project object */;
+}
