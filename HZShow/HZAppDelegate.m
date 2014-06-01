@@ -8,17 +8,18 @@
 
 #import "HZAppDelegate.h"
 
-#import "HZViewController.h"
+//#import "HZGrandTheatreViewController.m"
+//#import "FlowLayoutController.h"
 
 @implementation HZAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[HZViewController alloc] initWithNibName:@"HZViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+////    self.viewController = [[[HZGrandTheatreViewController alloc] initWithCollectionViewLayout:[[FlowLayoutController alloc] init]] init ];
+////    self.window.rootViewController = self.viewController;
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 

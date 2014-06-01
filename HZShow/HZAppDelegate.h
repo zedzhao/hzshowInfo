@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class HZViewController;
+//@class HZGrandTheatreViewController;
 
 @interface HZAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) HZViewController *viewController;
+//@property (strong, nonatomic) HZGrandTheatreViewController *viewController;
 
 @end
