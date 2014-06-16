@@ -73,15 +73,11 @@
     NSMutableArray *resultData = [[NSMutableArray alloc] initWithCapacity:0];
     
     for (TFHppleElement *element in nodes){
-//        NSLog(@"%element: @", element.tagName);
-        for (TFHppleElement *child in element.children)
-        {
-            if ([child.tagName isEqualToString:@"a"]) {
-                NSLog(@"%@", child.firstChild.content);
-                NSLog(@"%@", [child objectForKey:@"href"]);
-            }
-//            NSLog(@"child: %@", child.tagName);
-        }
+        HZGrandTheatre *theTheatre = [[HZGrandTheatre alloc] init];
+        [resultData addObject:theTheatre];
+        TFHppleElement *pChild = element.children[1];
+        theTheatre.showName = pChild.text;
+		theTheatre.linkUrl = [NSString stringWithFormat:@"%@/%@", HZ_THEATRE,[pChild objectForKey:@"href"]];
     }
     
     NSString *imageQueryString = @"//img[@class='ijmimg']";
@@ -89,8 +85,21 @@
     
     for (TFHppleElement *element in imgNodes)
     {
-    	NSLog(@"%@", [element objectForKey:@"src"]);
-        NSLog(@"%@", element);
+        HZGrandTheatre *theTheatre = [resultData objectAtIndex:[imgNodes indexOfObject:element]];
+		theTheatre.imgUrl =[NSString stringWithFormat:@"%@/%@", HZ_THEATRE, [element objectForKey:@"src"]];
+    }
+    
+    NSString *otherQueryString = @"//table[@height='120']";
+    NSArray *otherNodes = [theatreParser searchWithXPathQuery:otherQueryString];
+    for (TFHppleElement * element in otherNodes){
+        HZGrandTheatre *theTheatre = [resultData objectAtIndex:[otherNodes indexOfObject:element]];
+        TFHppleElement *aChild = element.children[1];
+		theTheatre.showDate = [aChild firstChildWithTagName:@"td"].text;
+        TFHppleElement *bChild = element.children[3];
+		theTheatre.location = [bChild firstChildWithTagName:@"td"].text;
+        TFHppleElement *cChild = element.children[5];
+        theTheatre.price = [cChild firstChildWithTagName:@"td"].text;
+        
     }
     return resultData;
 }

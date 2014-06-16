@@ -15,4 +15,5 @@
 @property (nonatomic, copy) NSString *imgUrl;
 @property (nonatomic, copy) NSString *linkUrl;
 @property (nonatomic, copy) NSString *price;
+@property (nonatomic, copy) NSString *location;
 @end

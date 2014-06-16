@@ -38,7 +38,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _theatreData = [HZGrandTheatreData getShowData];
+//    _theatreData = [HZGrandTheatreData getShowData];
+    _theatreData = [HZGrandTheatreData getHZTheatreData];
     [_tableView registerNib:[UINib nibWithNibName:@"HZGrandTheatreCell" bundle:nil] forCellReuseIdentifier:CELL_ID];
     
 	
