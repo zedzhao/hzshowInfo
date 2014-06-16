@@ -14,5 +14,5 @@
 @property (nonatomic, copy) NSString *showDate;
 @property (nonatomic, copy) NSString *imgUrl;
 @property (nonatomic, copy) NSString *linkUrl;
-
+@property (nonatomic, copy) NSString *price;
 @end

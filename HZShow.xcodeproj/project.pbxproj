@@ -238,8 +238,6 @@
 				3515586217A0982000DFA509 /* FlowLayoutController.m */,
 				3515586817A0A70700DFA509 /* CustomCell.h */,
 				3515586917A0A70700DFA509 /* CustomCell.m */,
-				359FBD7317E0B8A30095A86C /* HZGrandDetailVC.h */,
-				359FBD7417E0B8A30095A86C /* HZGrandDetailVC.m */,
 			);
 			name = SubViewController;
 			sourceTree = "<group>";
@@ -260,6 +258,8 @@
 				358DD20618E5AECA00C44C26 /* HZGrandTheatreViewController.m */,
 				358DD20818E5BAD900C44C26 /* HZGrandTheatreCell.h */,
 				358DD20918E5BAD900C44C26 /* HZGrandTheatreCell.m */,
+				359FBD7317E0B8A30095A86C /* HZGrandDetailVC.h */,
+				359FBD7417E0B8A30095A86C /* HZGrandDetailVC.m */,
 				358DD20A18E5BAD900C44C26 /* HZGrandTheatreCell.xib */,
 			);
 			name = HZGrandTheatre;

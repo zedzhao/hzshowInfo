@@ -8,8 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define HZ_GRAND_THEATRE @"http://www.hzdjy.com/"
-#define HZ_THEATRE @"http://www.hzjy.cn/"
+
 
 @interface HZGrandTheatreData : NSObject
 

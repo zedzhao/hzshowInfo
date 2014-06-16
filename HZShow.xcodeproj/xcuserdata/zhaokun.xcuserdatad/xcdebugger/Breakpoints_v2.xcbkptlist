@@ -23,12 +23,28 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HZShow/HZGrandTheatreViewController.m"
-            timestampString = "423304222.808398"
+            filePath = "HZShow/HZGrandTheatreData.m"
+            timestampString = "424620059.565363"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "+getShowData"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HZShow/HZGrandDetailVC.m"
+            timestampString = "424620568.729503"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -39,13 +55,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HZShow/HZGrandTheatreData.m"
-            timestampString = "423304235.10437"
+            filePath = "HZShow/HZGrandDetailVC.m"
+            timestampString = "424620587.708799"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "+getShowData"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "-viewDidAppear:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

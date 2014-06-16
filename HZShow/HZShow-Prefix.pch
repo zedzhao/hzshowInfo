@@ -9,6 +9,10 @@
 #endif
 
 #ifdef __OBJC__
+
+#define HZ_GRAND_THEATRE @"http://www.hzdjy.com/"
+#define HZ_THEATRE @"http://www.hzjy.cn/"
+
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "HZViewController.h"

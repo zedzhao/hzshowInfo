@@ -24,7 +24,7 @@
     }
     
     TFHpple *HZGrandTheatreParser = [TFHpple hppleWithHTMLData:theatreHtmlData];
-    NSString *showDataXpathQueryString = @"//div[@class='touming']";
+    NSString *showDataXpathQueryString = @"//div[@class='bd']/ul/li";
     
     NSArray *HZGrandTheatreNodes = [HZGrandTheatreParser searchWithXPathQuery:showDataXpathQueryString];
     
@@ -32,40 +32,23 @@
     
     //get show name and date;
     for(TFHppleElement *element in HZGrandTheatreNodes){
-        HZGrandTheatre *theTheatre = [[HZGrandTheatre alloc] init];
-        [newTheatre addObject:theTheatre];
-        
-        for(TFHppleElement *child in element.children){
-            if ([child.tagName isEqualToString:@"p"]) {
-                theTheatre.showName = [[child firstChild] content];
-                
-            }
+        @autoreleasepool {
             
-            if ([child.tagName isEqualToString:@"span"]) {
-                theTheatre.showDate = [[child firstChild] content];
-            }
-        }
-    }
-    
-    //get show pic url
-    NSString *showImageUrlXpathQueryString = @"//div[@class='list_list']/a/img";
-    NSArray *HZGrandTheatrePicUrlNodes = [HZGrandTheatreParser searchWithXPathQuery:showImageUrlXpathQueryString];
-    int index = 0;
-    for(TFHppleElement *element in HZGrandTheatrePicUrlNodes){
-        if ([element.tagName isEqualToString:@"img"]) {
-            HZGrandTheatre *theTheatre = [newTheatre objectAtIndex:index++];
-            theTheatre.imgUrl = [HZ_GRAND_THEATRE stringByAppendingString:[element objectForKey:@"src"]];
-        }
-    }
-    
-    NSString *showDetailUrlXpathQueryString = @"//div[@class='list_list']/a";
-    index = 0;
-    NSArray *HZGrandTheatreDetailUrlNodes = [HZGrandTheatreParser searchWithXPathQuery:showDetailUrlXpathQueryString];
-    
-    for (TFHppleElement *element in HZGrandTheatreDetailUrlNodes){
-        if ([element.tagName isEqualToString:@"a"]) {
-            HZGrandTheatre *theTheatre = [newTheatre objectAtIndex:index++];
-            theTheatre.linkUrl = [HZ_GRAND_THEATRE stringByAppendingString:[element objectForKey:@"href"]];
+        HZGrandTheatre *theTheatre = [[HZGrandTheatre alloc] init];
+        assert(element.children.count >= 3);
+        TFHppleElement *infoChild = element.firstChild;
+        TFHppleElement *dateChild = element.children[1];
+        TFHppleElement *priceChild = element.children[2];
+        
+        theTheatre.linkUrl = [NSString stringWithFormat:@"%@/%@", HZ_GRAND_THEATRE,[infoChild objectForKey:@"href"]]; // page url
+        theTheatre.imgUrl = [NSString stringWithFormat:@"%@/%@", HZ_GRAND_THEATRE,[infoChild.firstChild objectForKey:@"src"]]; //img url
+		
+        TFHppleElement *nChild = infoChild.children[1];
+        theTheatre.showName = nChild.firstChild.text; // show name
+        
+        theTheatre.showDate = dateChild.firstChild.text; // show date
+        theTheatre.price = priceChild.text; // price
+        [newTheatre addObject:theTheatre];
         }
     }
     
